@@ -166,7 +166,6 @@ export default function __identity($compile, FileLikeObject) {
             this.isCancel = false;
             this.isError = false;
             this.progress = 100;
-            this.index = null;
             this.onSuccess(response, status, headers);
         }
         /**
@@ -184,7 +183,6 @@ export default function __identity($compile, FileLikeObject) {
             this.isCancel = false;
             this.isError = true;
             this.progress = 0;
-            this.index = null;
             this.onError(response, status, headers);
         }
         /**
@@ -202,7 +200,6 @@ export default function __identity($compile, FileLikeObject) {
             this.isCancel = true;
             this.isError = false;
             this.progress = 0;
-            this.index = null;
             this.onCancel(response, status, headers);
         }
         /**
